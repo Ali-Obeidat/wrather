@@ -1,0 +1,315 @@
+body{
+    background-color: #323A48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-side{
+    background-image: url(img/drizzle.jpg);
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    color: white;
+}
+.date-container{
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 10px;
+}
+.weather-container{
+    padding: 10px;
+}
+.r-side{
+background-color: #222831;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 20px;
+}
+.info-side {
+    position: relative;
+    float: left;
+    height: 100%;
+    padding-top: 25px;
+  }
+  
+  .today-info {
+    padding: 15px;
+    margin: 0 25px 25px 25px;
+    /* 	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
+    border-radius: 10px;
+  }
+  
+  .today-info > div:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+  
+  .today-info > div .title {
+    float: left;
+    font-weight: 700;
+  }
+  
+  .today-info > div .value {
+    float: right;
+  }
+  
+  .week-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 35px;
+    -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* background: #; */
+  }
+  
+  .week-list > li {
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+    border-radius: 10px;
+  }
+  
+  .week-list > li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #fff;
+    color: #222831;
+    -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* .week-list > li.active {
+    background: #fff;
+    color: #222831;
+    border-radius: 10px;
+  } */
+  .activDay{
+    background: #fff;
+    color: #222831;
+    border-radius: 10px;
+  }
+  .week-list > li .day-name {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  
+  .week-list > li .day-icon {
+    display: block;
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .week-list > li .day-temp {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+  }
+  
+  .location-container {
+    padding: 25px 35px;
+  }
+  
+  .location-button {
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+   background-color: #5E8DEA;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+  }
+  
+  .location-button:hover {
+   
+    transform: scale(0.95);
+  }
+  
+  .location-button .feather {
+    height: 1em;
+    width: auto;
+    margin-right: 5px;
+  }
+  .today-info {
+    padding: 15px;
+    margin: 0 25px 25px 25px;
+    /* 	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .today-info > div:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+  
+  .today-info > div .title {
+    float: left;
+    font-weight: 700;
+  }
+  
+  .today-info > div .value {
+    float: right;
+  }
+  
+  .week-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 35px;
+    -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* background: #; */
+  }
+  
+  .week-list > li {
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+    border-radius: 10px;
+  }
+  
+  .week-list > li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #fff;
+    color: #222831;
+    -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .week-list > li.active {
+    background: #fff;
+    color: #222831;
+    border-radius: 10px;
+  }
+  
+  .week-list > li .day-name {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  
+  .week-list > li .day-icon {
+    display: block;
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .week-list > li .day-temp {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-weight: 700;
+  }
+  
+  .location-container {
+    padding: 25px 35px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .location-button {
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+  }
+  
+  .location-button:hover {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  .location-button .feather {
+    height: 1em;
+    width: auto;
+    margin-right: 5px;
+  }
+  .week-container{
+      display: flex;
+      justify-content: center;
+  }
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  #country{
+border-radius: 20px;
+justify-content: center;
+  }

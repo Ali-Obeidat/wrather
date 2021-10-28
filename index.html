@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>wrather</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: #323A48;">
+    <div class="container">
+        <div class="container">
+            <div class="row mt-5 ">
+              <div class="col-4 weather-side">
+                <div class="date-container">
+                    <h2 class="date-dayname">Tuesday</h2>
+                    <span class="date-day"></span
+                    ><i class="location-icon" data-feather="map-pin"></i
+                    ><span class="location">Paris, FR</span>
+                  </div>
+                  <div class="weather-container">
+                    <i class="weather-icon" data-feather="sun"></i>
+                    <h1 class="weather-temp">29°C</h1>
+                    <h3 class="weather-desc">Sunny</h3>
+                  </div>
+              </div>
+              <div class="col-6 r-side">
+                <div class="today-info-container">
+                    <div class="today-info">
+                      <div class="precipitation">
+                        <span class="title">PRECIPITATION</span
+                        ><span class="value">0 %</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="humidity">
+                        <span class="title">HUMIDITY</span><span class="value-humidity value">34 %</span>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="wind">
+                        <span class="title">WIND</span><span class="value-wind value">0 km/h</span>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="week-container">
+                    <ul class="week-list">
+                      <li class="li">
+                        <i class="day-icon" data-feather="sun"></i
+                        ><span class="day-name" value= "">Tuesday</span
+                        ><span class="day-temp">29°C</span>
+                      </li>
+                      <li class="li ">
+                        <i class="day-icon" data-feather="cloud"></i
+                        ><span class="day-name" value= "Wednesday">Wednesday</span
+                        ><span class="day-temp">21°C</span>
+                      </li>
+                      <li class="li">
+                        <i class="day-icon" data-feather="cloud-snow"></i
+                        ><span class="day-name">Thursday</span
+                        ><span class="day-temp">08°C</span>
+                      </li>
+                      <li>
+                        <i class="day-icon" data-feather="cloud-rain"></i
+                        ><span class="day-name">Fryday</span
+                        ><span class="day-temp">19°C</span>
+                      </li>
+                      <div class="clear"></div>
+                    </ul>
+                  </div>
+                  <div class="location-container">
+                    <!-- <button class="location-button " id="change">
+                      <i data-feather="map-pin"></i><span>Change location</span>
+                    </button> -->
+                    <select name="country  " id="country">
+                        <option value="">Change location</option>
+                        <option value="Hashemite Kingdom of Jordan">Jordan</option>
+                        <option value="London">London</option>
+                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                        <option value="Madrid">Madrid</option>
+                      </select>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+    
+      <script src="main.js">
+       
+      </script>
+</body>
+</html>
